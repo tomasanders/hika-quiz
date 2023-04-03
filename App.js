@@ -1,11 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { Header } from './app/components/Header';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome to HiKa Quiz!</Text>
-      <StatusBar style="auto" />
+      <Header />
     </View>
   );
 }
@@ -15,11 +14,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FEECCA',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
   },
-  text: {
-    fontSize: 20,
-    color: '#000000',
-    fontWeight: 700,
-  }
 });
